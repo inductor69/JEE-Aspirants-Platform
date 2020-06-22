@@ -1,0 +1,10 @@
+{
+    "presets": [
+        "next/babel"
+    ],
+    "plugins": [
+        "inline-react-svg",
+        "babel-plugin-transform-react-class-to-function",
+        "minify-mangle-names"
+    ]
+}

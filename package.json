@@ -1,0 +1,58 @@
+{
+  "name": "talaikis-next",
+  "version": "1.0.0",
+  "description": "Personal website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "upgrade": "ncu -u",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalaikisInc/talaikis-next.git"
+  },
+  "author": "Tadas Talaikis <info@talaikis.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TalaikisInc/talaikis-next/issues"
+  },
+  "homepage": "https://github.com/TalaikisInc/talaikis-next#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "next": "^9.4.4",
+    "puppeteer": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-epic-spinners": "^0.4.1",
+    "react-icons": "^3.10.0",
+    "use-media": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-minify-mangle-names": "^0.5.0",
+    "babel-plugin-transform-react-class-to-function": "^1.2.2",
+    "eslint": "^7.3.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "npm-check-updates": "^7.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.7.2",
+    "react-is": "^16.13.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  }
+}
